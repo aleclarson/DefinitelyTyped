@@ -256,7 +256,7 @@ type InstalledMethods = {
  *
  * @type TClock   type of base clock (e.g BrowserClock).
  */
-type InstalledClock<TClock extends Clock> = TClock & InstalledMethods;
+type InstalledClock<TClock extends Clock = Clock> = TClock & InstalledMethods;
 
 /**
  * Creates a clock.
